@@ -48,7 +48,7 @@ jobs:
           cargo install --force duckscript_cli
 
       - name: Build AppFlowy
-        timeout-minutes: 40
+        timeout-minutes: 60
         working-directory: frontend
         run: |
           flutter config --enable-macos-desktop
