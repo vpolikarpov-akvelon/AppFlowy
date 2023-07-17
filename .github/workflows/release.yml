@@ -51,7 +51,7 @@ jobs:
         timeout-minutes: 45
         working-directory: frontend
         run: |
-          { while true; do ps axjf; sleep 60; done } &
+          { while true; do echo ===START===; ps axj; echo ===END===; sleep 60; done } &
           flutter config --enable-macos-desktop
           dart ./scripts/flutter_release_build/build_flowy.dart . ${{ github.ref_name }}
 
