@@ -2,7 +2,7 @@ name: release
 
 on:
   push:
-    branch:
+    branches:
       - "test-release-71d1189048"
 
 env:
